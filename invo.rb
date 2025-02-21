@@ -5,21 +5,21 @@
 class Invo < Formula
   desc "invo: a minimalist CLI tool for generating professional PDF invoices"
   homepage "https://github.com/yarlson/invo"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/yarlson/invo/releases/download/0.1.0/invo_0.1.0_darwin_amd64.tar.gz"
-      sha256 "7a1a5e3dc81d4f60cf8c5042524b300c3b3ee8248c71d891e676bd2972b819ca"
+      url "https://github.com/yarlson/invo/releases/download/0.2.0/invo_0.2.0_darwin_amd64.tar.gz"
+      sha256 "a0fd8255b3792aeaf14b1c0cf2b5d77542ff5c7f2c66696296f64c5134fa16e3"
 
       def install
         bin.install "invo"
       end
     end
     on_arm do
-      url "https://github.com/yarlson/invo/releases/download/0.1.0/invo_0.1.0_darwin_arm64.tar.gz"
-      sha256 "b84bb93ebde9505d17be3d1b08b73096091a4bcb0a9f6da9d608e847ebd974ba"
+      url "https://github.com/yarlson/invo/releases/download/0.2.0/invo_0.2.0_darwin_arm64.tar.gz"
+      sha256 "5c55684ec1059f62b6f8736346e652133fada3b5422c7fac1a781c4a8e78c143"
 
       def install
         bin.install "invo"
@@ -30,8 +30,8 @@ class Invo < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yarlson/invo/releases/download/0.1.0/invo_0.1.0_linux_amd64.tar.gz"
-        sha256 "82a7a92be57fbc82f08a9bfa28e504ce1f7c5e532c85767db02d4224cf84e97f"
+        url "https://github.com/yarlson/invo/releases/download/0.2.0/invo_0.2.0_linux_amd64.tar.gz"
+        sha256 "7f6a7b3835480074856353d0f281298b614a04fe93d868e41a7a3ee3b3197758"
 
         def install
           bin.install "invo"
@@ -40,8 +40,8 @@ class Invo < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yarlson/invo/releases/download/0.1.0/invo_0.1.0_linux_arm64.tar.gz"
-        sha256 "39024ea35d647ce66f33db8815f7c0cf65dddeb6cbe1e447280e551f8223c66e"
+        url "https://github.com/yarlson/invo/releases/download/0.2.0/invo_0.2.0_linux_arm64.tar.gz"
+        sha256 "3a8b45b27914afeff79b520be0b2391158517b37e4748586defa38ecc6e1016c"
 
         def install
           bin.install "invo"
